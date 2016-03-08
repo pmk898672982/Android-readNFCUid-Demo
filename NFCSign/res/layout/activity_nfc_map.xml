@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+        android:id="@+id/txt_nfc_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NFC标签UID： "/>
+        <TextView 
+        android:id="@+id/txt_uid_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+        android:id="@+id/txt_map_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="坐标： "/>
+        <TextView 
+        android:id="@+id/txt_location_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+        android:id="@+id/txt_map_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定位时间： "/>
+        <TextView 
+        android:id="@+id/txt_location_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+        android:id="@+id/txt_map_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="address： "/>
+        <TextView 
+        android:id="@+id/txt_location_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    </LinearLayout>
+    <com.amap.api.maps.MapView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    
+</LinearLayout>

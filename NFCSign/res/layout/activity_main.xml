@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kun.nfcsign.MainActivity" >
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NFC签到系统" />
+
+     <Button
+         android:id="@+id/btn_nfc_card"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btn_nfc_map"
+         android:layout_centerVertical="true"
+         android:text="打卡签到" />
+
+     <Button
+         android:id="@+id/btn_nfc_map"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/btn_nfc_card"
+         android:layout_alignLeft="@+id/btn_nfc_pay"
+         android:layout_marginBottom="52dp"
+         android:text="地图签到" />
+
+     <Button
+         android:id="@+id/btn_nfc_pay"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/btn_nfc_card"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="52dp"
+         android:text="NFC支付" />
+
+</RelativeLayout>
